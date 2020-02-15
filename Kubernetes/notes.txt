@@ -1,6 +1,12 @@
+#To check minikube version
+  minikube version
+
+#Minikube dashboard
+  minikube dashboard
 
 #Start minikube 
   minikube start
+
 #To check the status of minikube 
  minikube status
 
