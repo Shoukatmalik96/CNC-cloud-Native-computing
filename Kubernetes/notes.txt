@@ -1,0 +1,41 @@
+
+#Start minikube 
+  minikube start
+#To check the status of minikube 
+ minikube status
+
+#To check the address of master and serveice 
+ kubectl cluster-info
+
+#List down nodes in kubernetes cluster 
+ kubectl get nodes
+
+#To check the additional detail of each node
+ kubectl describe nodes minikube
+
+#Alias (short name)
+ alias kg="kubectl get"
+
+#Creating Pod
+ kubectl create -f nodeName.yaml
+
+#Pod Listing 
+  kubectl get pods
+
+#if we have already a pod and we wanted to check pod insights
+ kubectl get pod pod-Name -o yaml
+
+#Pod creation without YAML
+ kubectl run pod-Name --image=shoukatmalikse/helloworld --port=80 --restart=Never
+
+#Port Forwarding 
+ kubectl port-forward pod-name 9000:80 
+
+#Deleting pod
+ kubectl delete pod pod-name
+
+#To check on which node the pod is running physically 
+ kubectl get pod pod-name -o yaml
+
+
+
